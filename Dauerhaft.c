@@ -46,7 +46,7 @@ void sendCommand(u8 Channel, u8 cmd, u8 subcmd) {
                     ID ^ chlow ^ chhigh ^ cmd ^ subcmd});
 }
 
-V-ID/ms : 100 {
+V-ID/ms:100 {
   if (readchan < NumCh) {
     sendCommand(readchan + 1, 0xcc, 0x00);
   }
